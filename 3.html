@@ -14,21 +14,77 @@
   gtag('config', 'G-MT2Z02SLL5');
 </script>
 
-</head>
+<style>
+#사전체크 {
+  color: orange;
+}
+  .saw {
+    color: gray;
+  }
+  h1 {
+    font-size: 50px;
+    text-align: center;
+  }
+  body{
+    margin: 0;
+  }
+  a {
+    color: skyblue;
+    text-decoration: none;
+  }
+  .saw {
+    color: gray;
+  }
+  h1 {
+    font-size: 50px;
+    text-align: center;
+    border-bottom: 1px solid skyblue;
+    margin:0;
+    padding: 20px;
+  }
+  ol{
+    border-right: 1px solid skyblue;
+    width: 100px;
+    margin-top: 0;
+    padding: 20px;
+  }
+  #목차{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+  }
+  #목차 ol{    /** 목차 밑에있는 ol */
+    padding-left: 33px;
+  }
+  #내용{
+    padding-left: 33px;
+  }
+</style>
 
+</head>
 <body>
-<h1><a href="index.html">♥BEAN♥</a></h1>
-<h2>사전체크</h2>
-<hr>
-<img src="cute (7).jpg" width="500">
-<h3>콩이는?</h3>
-<hr>
-<p><form action="place" method="get">
-<input type="checkbox" name="check1" value="1"> 귀여움
-<input type="checkbox" name="check2" value="2"> 깜찍함
-<input type="checkbox" onclick="view(this)" > <font size=10px><strong><u style="color:red"><span style="color:red">둘 다</u></strong></span>
-<input type="button" id="bb" value=" Click " disabled="true" onclick="alert('정답 추카추카ƪ( ˘ ⌣˘ )ʃ');">
-</form></P>
+  <h1><a href="index.html">♥BEAN♥</font></a></h1>
+<div id="목차">
+  <ol>
+    <li><a href="1.html" class="saw">콩</font></a></li>
+    <li><a href="2.html" class="saw">종</font></a></li>
+    <li><a href="3.html" class="saw" id="사전체크">사전체크</font></a></li>
+    <li><a href="4.html" class="saw">귀여움</font></a></li>
+  </ol>
+    <div id="내용">
+    <body>
+    <h2>사전체크</h2>
+    <hr>
+    <img src="cute (7).jpg" width="500">
+    <h3>콩이는?</h3>
+    <hr>
+    <p><form action="place" method="get">
+    <input type="checkbox" name="check1" value="1"> 귀여움
+    <input type="checkbox" name="check2" value="2"> 깜찍함
+    <input type="checkbox" onclick="view(this)" > <font size=10px><strong><u style="color:red"><span style="color:red">둘 다</u></strong></span>
+    <input type="button" id="bb" value=" Click " disabled="true" onclick="alert('정답 추카추카ƪ( ˘ ⌣˘ )ʃ');">
+    </form></P>
+  </div>
+</div>
 
 <script type="text/javascript">
 function view(aa){
